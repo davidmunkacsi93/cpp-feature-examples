@@ -40,3 +40,5 @@ To compile and run an example, navigate to the specific feature folder and use t
    g++ -std=c++XX with.cpp -o with
    ./with
    ```
+
+e mindful of the C++ standard version you are compiling with—language features are not forward-compatible. For example, std::make_unique is a C++14 feature and will result in a compilation error if used in a C++11 build, mistake that I've made :).
